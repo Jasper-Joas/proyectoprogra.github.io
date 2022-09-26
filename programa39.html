@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinar cual  es el numero mayor de tres  numero</title>
+</head>
+<body>
+    <script>
+        let num1, num2, num3, t, mayor;
+        num1 = parseInt(prompt("Ingrese el primer numero: "));
+        num2 = parseInt(prompt("Ingrese el segundo  numero: "));
+        num3 = parseInt(prompt("Ingrese el tercer numero: "));
+        if(num1 > num2){
+            t = num1;
+        }else{
+            t = num2;
+
+        }
+        if(t > num3){
+            mayor = t;
+
+        }else{
+            mayor = num3;
+        }
+        document.write("El numero mayor es: " +  mayor);
+
+    </script>
+</body>
+</html>

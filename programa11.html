@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+		//Bucle para introducir puntajes de pruebas
+        do {
+            //Se pide una nota
+            var nota = prompt("Introduce tu nota, por favor (0/10)");
+
+            //Si se introduce un número, pasa esto
+            if (Number(nota) == nota) {
+                //Si ls nota está entre 0 y 10, comprueba que número es
+                if (nota > 0 && nota <= 10) {
+                    switch (nota) {
+                        default:
+                        alert("Poco eficiente");
+                        break;
+                        case "5":
+                        alert("Insuficiente");
+                        break;
+                        case "6":
+                        alert("Suficiente");
+                        break;
+                        case "7":
+                        alert("Bien");
+                        break;
+                        case "8":
+                        alert("Muy bien");
+                        break;
+                        case "9":
+                        alert("Excelente");
+                        break;
+                        case "10":
+                        alert("Sobresaliente");
+                        break;
+                    }
+                } //Si no está entre 0 y 10
+                    else {
+                    alert("Nota erronea");
+                    }
+            } //Si lo introducido no es un número
+            else { //Si se pulsa aceptar por accidente (cuando se pulsa aceptar no es undefined)
+                if(nota != undefined) {
+                    alert("Introduce un numero valido, por favor.")
+                }
+            }
+        } //El bucle no termina hasta que se haya pulsado cancelar (representa undefined)
+        while(nota != undefined);
+        alert("Adios");
+	</script>
+</body>
+</html>
